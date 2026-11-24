@@ -13,9 +13,8 @@ inline constexpr double seuilValidation = 10.0;
 enum class Mention { Ajourne, Passable, AssezBien, Bien, TresBien };
 
 /// Une note est valide si elle appartient à [noteMin ; noteMax].
-constexpr bool estNoteValide(double note)
-{
- return note >= noteMin && note <= noteMax;
+constexpr bool estNoteValide(double note) {
+    return note >= noteMin && note <= noteMax;
 }
 
 /// Mention correspondant à une moyenne.
